@@ -7,11 +7,10 @@ import {MatInputModule} from '@angular/material/input';
 import { AuthService } from './auth.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, FormsModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, FormsModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   authForm: FormGroup = new FormGroup({
